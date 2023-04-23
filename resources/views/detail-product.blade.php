@@ -49,7 +49,7 @@
     </div>
 </div>
 <script>
-    $(document).ready(funtion(){
+    $(document).ready(function(){
         $('.btn').click(function(){
             id = this.attr('id')
             var cl_btn = document.getElementByClassName('.btn')
