@@ -15,7 +15,7 @@
                         <tr>
                             <th>Tên SP</th>
                             <th>Số Lượng</th>
-                            <th>Thể Loại</th>
+                            <th>Hình Ảnh</th>
                             <th>Danh Mục</th>
                             <th>Hành động</th>
                         </tr>
@@ -24,8 +24,36 @@
                         <tr>
                             <td>Giày đinh</td>
                             <td>10</td>
+                            <td><img src="{{ asset('dist/img/user1-128x128.jpg') }}" alt=""></td>
                             <td>Giày thể thao</td>
-                            <td>Danh mục</td>
+                            <td>xóa - sửa</td>
+                        </tr>
+                        <tr>
+                            <td>Giày đinh</td>
+                            <td>10</td>
+                            <td><img src="{{ asset('dist/img/user1-128x128.jpg') }}" alt=""></td>
+                            <td>Giày thể thao</td>
+                            <td>xóa - sửa</td>
+                        </tr>
+                        <tr>
+                            <td>Giày đinh</td>
+                            <td>10</td>
+                            <td><img src="{{ asset('dist/img/user1-128x128.jpg') }}" alt=""></td>
+                            <td>Giày thể thao</td>
+                            <td>xóa - sửa</td>
+                        </tr>
+                        <tr>
+                            <td>Giày đinh</td>
+                            <td>10</td>
+                            <td><img src="{{ asset('dist/img/user1-128x128.jpg') }}" alt=""></td>
+                            <td>Giày thể thao</td>
+                            <td>xóa - sửa</td>
+                        </tr>
+                        <tr>
+                            <td>Giày đinh</td>
+                            <td>10</td>
+                            <td><img src="{{ asset('dist/img/user1-128x128.jpg') }}" alt=""></td>
+                            <td>Giày thể thao</td>
                             <td>xóa - sửa</td>
                         </tr>
                     </tbody>
