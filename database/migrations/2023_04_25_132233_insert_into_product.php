@@ -15,16 +15,19 @@ return new class extends Migration
     public function up()
     {
         //
-        DB::table('table_category')->insert(
+        DB::table('table_product')->insert(
             array(
-                'name' => 'Thể Thao',
-            )
+                'name' => 'Giày đinh',
+                'quantity' => 5,
+                'id_category' => 1,
+            ),
         );
-
-        DB::table('category')->insert(
+        DB::table('table_product')->insert(
             array(
-                'name' => 'danh mục 2',
-            )
+                'name' => 'Giày 2',
+                'quantity' => 5,
+                'id_category' => 1,
+            ),
         );
     }
 
