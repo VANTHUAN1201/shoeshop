@@ -5,8 +5,10 @@
         <div class="row">
             <div class="col-12">
             <div class="card">
-                <div class="card-header">
-                <h3 class="card-title">Sản phẩm</h3>
+                <div class="card-header" style="display:flex; justify-content:space-between;width:100%">
+                    <h2 class="card-title">Sản phẩm</h2>
+                    <div></div>
+                    <a href="/admin/product/add" class="btn btn-primary">Thêm sản phẩm</a>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
