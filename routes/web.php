@@ -40,3 +40,10 @@ Route::get('/register', function () {
 Route::get('/admin', function () {
     return view('admin.template.main-layout-admin');
 });
+
+Route::get('/admin/product', function () {
+    return view('admin.product-admin');
+});
+Route::get('/admin/product/add', function () {
+    return view('admin.add-product');
+});

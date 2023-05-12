@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('quyen', function (Blueprint $table) {
             $table->id();
             $table->string('ten_quyen');
-            $table->timestamps();
         });
     }
 
