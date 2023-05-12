@@ -182,7 +182,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" >
             <li class="nav-item menu-open">
                 <a href="#" class="nav-link ">
-                <i class="icon-fa fa-trash"></i>
+                <i class="fa-solid fa-user"></i>
                 <p>
                     USERS
                 </p>
