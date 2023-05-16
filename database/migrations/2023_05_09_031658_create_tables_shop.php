@@ -3,7 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Date;
 
 return new class extends Migration
 {
@@ -25,7 +24,7 @@ return new class extends Migration
             $table->foreign('id_quyen')->references('id')->on('quyen')->onDelete('cascade');
             $table->timestamps();
         });
-        Schema::create('Hang', function (Blueprint $table) {
+        Schema::create('hang', function (Blueprint $table) {
             $table->id();
             $table->string('ten')->unique();
             $table->timestamps();
@@ -50,19 +49,19 @@ return new class extends Migration
         });
         Schema::create('chi_tiet_giay', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_giay')->unique();
+            $table->unsignedBigInteger('id_giay');
             $table->unsignedBigInteger('id_mau');
-            $table->unsignedBigInteger('id_size')->unique();
-            $table->integer('soluong')->unique();
+            $table->unsignedBigInteger('id_size');
+            $table->integer('soluong');
             $table->foreign('id_giay')->references('id')->on('giay')->onDelete('cascade');
             $table->foreign('id_mau')->references('id')->on('mau')->onDelete('cascade');
             $table->foreign('id_size')->references('id')->on('size')->onDelete('cascade');
             $table->timestamps();
         });
-        Schema::create('image', function (Blueprint $table) {
+        Schema::create('anh', function (Blueprint $table) {
             $table->id();
             $table->string('anh')->unique();
-            $table->unsignedBigInteger('id_chi_tiet_giay')->unique();
+            $table->unsignedBigInteger('id_chi_tiet_giay');
             $table->foreign('id_chi_tiet_giay')->references('id')->on('chi_tiet_giay')->onDelete('cascade');
             $table->timestamps();
         });
@@ -90,12 +89,10 @@ return new class extends Migration
         });
         Schema::create('chitiet_nhapkho', function (Blueprint $table) {
             $table->id();
-            $table->string('username')->unique();
-            $table->string('password');
-            $table->string('email')->unique();
-            $table->string('sdt')->unique();
-            $table->string('addr');
-            $table->int('id_quyen')->references('quyen');
+            $table->unsignedBigInteger('id_giay');
+            $table->foreign('id_giay')->references('id')->on('giay')->onDelete('cascade');
+            $table->unsignedBigInteger('id_nhapkho');
+            $table->foreign('id_nhapkho')->references('id')->on('nhapkho')->onDelete('cascade');
             $table->timestamps();
         });
         Schema::create('donhang', function (Blueprint $table) {
@@ -106,14 +103,12 @@ return new class extends Migration
             $table->foreign('id_user')->references('id')->on('user')->onDelete('cascade');
             $table->timestamps();
         });
-        Schema::create('user', function (Blueprint $table) {
+        Schema::create('chitiet_donhang', function (Blueprint $table) {
             $table->id();
-            $table->string('username')->unique();
-            $table->string('password');
-            $table->string('email')->unique();
-            $table->string('sdt')->unique();
-            $table->string('addr');
-            $table->int('id_quyen')->references('quyen');
+            $table->unsignedBigInteger('id_giay');
+            $table->foreign('id_giay')->references('id')->on('giay')->onDelete('cascade');
+            $table->unsignedBigInteger('id_donhang');
+            $table->foreign('id_donhang')->references('id')->on('donhang')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -125,6 +120,18 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tables_shop');
+        Schema::dropIfExists('user');
+        Schema::dropIfExists('hang');
+        Schema::dropIfExists('mau');
+        Schema::dropIfExists('size');
+        Schema::dropIfExists('giay');
+        Schema::dropIfExists('donhang');
+        Schema::dropIfExists('chitiet_donhang');
+        Schema::dropIfExists('anh');
+        Schema::dropIfExists('nhapkho');
+        Schema::dropIfExists('chitiet_nhapkho');
+        Schema::dropIfExists('chi_tiet_giay');
+        Schema::dropIfExists('giohang');
+        Schema::dropIfExists('chitiet_giohang');
     }
 };
