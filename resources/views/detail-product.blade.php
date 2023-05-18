@@ -22,18 +22,16 @@
         </div>
         <div class="detail-right">
             <h3>NIKE PHANTOM GX ACADEMY TF LUMINOUS - BARELY VOLT/GRIDIRON/BARELY GRAPE</h3>
-            <p>4000000 VNĐ</p>
-            <p>nhà cung cấp: Nike</p>
-            <p>SKU:Nike000001 </p>
-
-            <p>MÀU</p>
+            <p>Giá tiền:400.000 VNĐ</p>
+            <p>Nhà cung cấp: Nike</p>
+            <p>Màu</p>
             <div style="display:flex;">
                 <button type="button" id="trang" class="btn btn-outline-dark">Trắng</button>
                 <button type="button" id="xanh" class="btn btn-outline-dark">Xanh</button>
                 <button type="button" id="do" class="btn btn-outline-dark">Đỏ</button>
             </div>
 
-            <p>Size</p>
+            <p>Kích thước</p>
             <div style="display:flex;">
                 <Button type="button" class="btn btn-outline-dark">39</Button>
                 <Button type="button" class="btn btn-outline-dark">40</Button>
@@ -43,7 +41,8 @@
             <br>
             <div style="display:flex; width:35%; justify-content:space-between">
                 <Button type="button" class="btn btn-dark" >Mua ngay</Button>
-                <Button type="button" class="btn btn-danger">Thêm giỏ hàng</Button>
+                <a name="" id="" class="btn btn-primary" href="/cart" >Thêm giỏ hàng</a>
+                <!-- <Button type="button" class="btn btn-danger">Thêm giỏ hàng</Button> -->
             </div>
         </div>
     </div>

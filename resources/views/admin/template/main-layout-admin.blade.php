@@ -164,56 +164,55 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="/admin" class="brand-link">
-      <img src="{{ asset('dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Admin Shoe Shop</span>
+      <img src="{{ asset('assets/image/logo.png') }}" alt="AdminLTE Logo" style="width: 80%;" >
+      
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="{{ asset('dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">Nguyễn Văn Thúng</a>
-        </div>
-      </div>
+    
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" >
             <li class="nav-item menu-open">
-                <a href="#" class="nav-link ">
-                <i class="fa-solid fa-user"></i>
-                <a href="/admin/user" class="nav-link ">
-                <i class="icon-fa fa-trash"></i>
+                <a href="/admin/category" class="nav-link ">
+                <i class="fa-solid fa-bars"></i>
                 <p>
-                    USERS
+                    QUẢN LÝ DANH MỤC
                 </p>
                 </a>
             </li>
             <li class="nav-item menu-open">
                 <a href="/admin/product" class="nav-link ">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <i class="fa-solid fa-palette"></i>
                 <p>
-                    SẢN PHẨM
+                    QUẢN LÝ SẢN PHẨM
                 </p>
                 </a>
             </li>
             <li class="nav-item menu-open">
-                <a href="/admin/category" class="nav-link ">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <a href="" class="nav-link ">
+                <i class="fa-solid fa-file-invoice"></i>
                 <p>
-                    DANH MỤC
+                    QUẢN LÝ ĐƠN HÀNG
+                </p>
+                </a>
+            </li>
+            
+            <li class="nav-item menu-open">
+                <a href="admin/thongke" class="nav-link ">
+                <i class="fa-solid fa-chart-simple"></i>
+                <p>
+                  THỐNG KÊ
                 </p>
                 </a>
             </li>
             <li class="nav-item menu-open">
                 <a href="admin/thongke" class="nav-link ">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <i class="fa-solid fa-right-from-bracket"></i>
                 <p>
-                    THỐNG KÊ
+                 ĐĂNG XUẤT
                 </p>
                 </a>
             </li>

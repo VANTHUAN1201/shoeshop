@@ -3,13 +3,13 @@
 <div class="container-fluid" style="padding:10px">
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="900">
+            <div class="carousel-item active" data-bs-interval="1200">
                 <img src="assets/image/banner4.jpg" class="d-block w-100" alt="..." style=" max-height: 938px;">
             </div>
-            <div class="carousel-item" data-bs-interval="900">
+            <div class="carousel-item" data-bs-interval="1200">
                 <img src="assets/image/banner2.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item" data-bs-interval="900">
+            <div class="carousel-item" data-bs-interval="1200">
                 <img src="assets/image/banner3.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
@@ -36,7 +36,7 @@
                 <div class="card">
                     <img src="assets/image/nike_phantom_gx2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <a href="" class="card-title">NIKE PHANTOM GX ACADEMY TF LUMINOUS - BARELY VOLT/GRIDIRON/BARELY GRAPE</a><br>
+                        <a href="/product" class="card-title">NIKE PHANTOM GX ACADEMY TF LUMINOUS - BARELY VOLT/GRIDIRON/BARELY GRAPE</a><br>
                         <a href="">350.000đ</a>
                     </div>
                 </div>
