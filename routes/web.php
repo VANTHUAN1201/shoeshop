@@ -50,3 +50,6 @@ Route::get('/admin/category', function () {
 Route::get('/admin/product/add', function () {
     return view('admin.add-product');
 });
+Route::get('/admin/login', function () {
+    return view('admin.login-admin');
+});

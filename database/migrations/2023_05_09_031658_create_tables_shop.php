@@ -79,7 +79,6 @@ return new class extends Migration
             $table->unsignedBigInteger('id_giohang');
             $table->foreign('id_giohang')->references('id')->on('giohang')->onDelete('cascade');
             $table->integer('soluong')->default(1);
-            $table->integer('tongtien')->default(0);
             $table->timestamps();
         });
         Schema::create('nhapkho', function (Blueprint $table) {
@@ -105,6 +104,7 @@ return new class extends Migration
         });
         Schema::create('chitiet_donhang', function (Blueprint $table) {
             $table->id();
+            $table->integer('soluong')->default(1);
             $table->unsignedBigInteger('id_giay');
             $table->foreign('id_giay')->references('id')->on('giay')->onDelete('cascade');
             $table->unsignedBigInteger('id_donhang');
